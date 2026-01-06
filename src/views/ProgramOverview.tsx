@@ -1,6 +1,6 @@
 // C:\proyectos\prueba\pagina-curso\src\views\ProgramOverview.tsx
 import { FaShieldAlt, FaRocket, FaGlobeAmericas } from 'react-icons/fa';
-import { SiRust, SiStellar } from 'react-icons/si';
+import { SiStellar } from 'react-icons/si';
 
 const ProgramOverview = () => {
   return (

@@ -1,6 +1,12 @@
 // C:\proyectos\prueba\pagina-curso\src\views\Team.tsx
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
+// Importar fotos del equipo
+import SergioPhoto from '../../Team/SergioAgilar.png';
+import DanielPhoto from '../../Team/DanielLagart.png';
+import AndreaPhoto from '../../Team/AndreaJunes.png';
+import JosePhoto from '../../Team/JoseRoman.png';
+
 const Team = () => {
   const teamMembers = [
     {
@@ -8,28 +14,32 @@ const Team = () => {
       role: "Ingeniería Web3 / DeFi",
       description: "Experto en arquitecturas DeFi y smart contracts. 5+ años en desarrollo blockchain.",
       expertise: ["Smart Contracts", "DeFi Protocols", "System Architecture"],
-      color: "#00eeff"
+      color: "#00eeff",
+      photo: SergioPhoto
     },
     {
       name: "Daniel Bustamante Lagart",
       role: "Ciberseguridad & Pentesting",
       description: "Especialista en seguridad ofensiva con background en auditorías de grandes corporaciones.",
       expertise: ["Penetration Testing", "Threat Modeling", "Security Audits"],
-      color: "#00ff9d"
+      color: "#00ff9d",
+      photo: DanielPhoto
     },
     {
       name: "Andrea Junes",
       role: "Full-Stack, QA & Arquitectura Web",
       description: "Desarrolladora full-stack con enfoque en calidad y seguridad en aplicaciones web.",
       expertise: ["Web Security", "QA Automation", "Cloud Architecture"],
-      color: "#ff00ff"
+      color: "#ff00ff",
+      photo: AndreaPhoto
     },
     {
       name: "José Andrade",
       role: "Blockchain Developer / Tech Lead",
       description: "Líder técnico especializado en Stellar/Soroban con experiencia en proyectos en producción.",
       expertise: ["Stellar/Soroban", "Rust", "Technical Leadership"],
-      color: "#ffaa00"
+      color: "#ffaa00",
+      photo: JosePhoto
     }
   ];
 
@@ -50,12 +60,14 @@ const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {teamMembers.map((member, index) => (
             <div key={index} className="group bg-gradient-to-br from-[#0d0d14] to-[#0a0a0f] border border-white/10 rounded-2xl p-6 hover:scale-[1.02] transition-all duration-300">
-              {/* Avatar Placeholder */}
+              {/* Avatar con foto */}
               <div className="relative mb-6">
-                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center border-2" style={{ borderColor: member.color }}>
-                  <div className="text-2xl font-bold" style={{ color: member.color }}>
-                    {member.name.charAt(0)}
-                  </div>
+                <div className="w-24 h-24 mx-auto rounded-full border-2 overflow-hidden" style={{ borderColor: member.color }}>
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute bottom-0 right-1/4 w-6 h-6 rounded-full bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-[#0a0a0f] flex items-center justify-center">
                   <div className="w-2 h-2 rounded-full" style={{ backgroundColor: member.color }} />

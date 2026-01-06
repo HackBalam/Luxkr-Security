@@ -18,19 +18,16 @@ const Footer = () => {
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold mb-8">
               <span className="bg-gradient-to-r from-[#00ff9d] via-[#00eeff] to-[#ff00ff] bg-clip-text text-transparent">
-                ¿Listo para convertirte en auditor?
+                ¿Quieres tener una asesoría gratis de ciberseguridad?
               </span>
             </h2>
             <p className="text-xl text-[#ccc] max-w-3xl mx-auto mb-12">
-              Aplica ahora al programa profesional de auditoría de seguridad blockchain y únete a la élite de la seguridad Web3 en Latinoamérica.
+              Llena el formulario con los datos correspondientes, agenda una sesión y nos pondremos en contacto contigo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-[#00ff9d] to-[#00eeff] text-black font-bold rounded-xl hover:shadow-glowStrong transition-all duration-300">
-                APLICAR AL PROGRAMA
-              </button>
-              <button className="px-8 py-4 bg-transparent border-2 border-[#ff00ff] text-[#ff00ff] font-bold rounded-xl hover:bg-[#ff00ff]/10 transition-all duration-300">
-                UNIRSE A LA COMUNIDAD
-              </button>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAaZURcneOSbE4eUK7_pYW8nVtFsxFshIfRn0VjMyRHfh2-w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-gradient-to-r from-[#00ff9d] to-[#00eeff] rounded-xl hover:shadow-glowStrong transition-all duration-300">
+                <span className="font-bold text-white" style={{ color: '#ffffff' }}>FORMULARIO</span>
+              </a>
             </div>
           </div>
 
@@ -77,7 +74,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="flex items-center gap-2 text-[#ccc] hover:text-[#00ff9d] transition-colors">
+                  <a href="https://t.me/+R2JMS0zIj51iZTMx" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#ccc] hover:text-[#00ff9d] transition-colors">
                     <FaTelegram />
                     <span>Telegram Community</span>
                   </a>
@@ -87,13 +84,13 @@ const Footer = () => {
               <div className="mt-6">
                 <h4 className="text-sm font-bold mb-3 text-[#888]">SÍGUENOS</h4>
                 <div className="flex gap-3">
-                  <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-[#00eeff]/20 transition-colors">
+                  <a href="https://x.com/luxkrlatam" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-lg hover:bg-[#00eeff]/20 transition-colors">
                     <FaTwitter className="text-lg" />
                   </a>
                   <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-[#00eeff]/20 transition-colors">
                     <FaLinkedin className="text-lg" />
                   </a>
-                  <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-[#00eeff]/20 transition-colors">
+                  <a href="https://github.com/HackBalam/Luxkr-Security" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-lg hover:bg-[#00eeff]/20 transition-colors">
                     <FaGithub className="text-lg" />
                   </a>
                 </div>

@@ -1,13 +1,12 @@
 // C:\proyectos\prueba\pagina-curso\src\views\ProblemSolution.tsx
-import { 
-  FaExclamationTriangle, 
-  FaCheckCircle, 
+import {
+  FaExclamationTriangle,
+  FaCheckCircle,
   FaShieldAlt,
   FaChartLine,
-  FaGlobeAmericas,
   FaClock,
   FaMoneyBillWave,
-  FaUserTie 
+  FaUserTie
 } from 'react-icons/fa';
 
 const ProblemSolution = () => {

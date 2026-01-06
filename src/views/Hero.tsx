@@ -1,15 +1,6 @@
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
-import LogoLoop from "../components/LogoLoop/LogoLoop";
 import compuHero from "../assets/compu-hero.jpg";
 
 const Hero = () => {
-    const techLogos = [
-        { node: <SiReact />, title: "React", href: "https://react.dev" },
-        { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-        { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-        { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-    ];
-
     return (
         <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
             {/* Fondo con la imagen de la MacBook */}
@@ -86,10 +77,14 @@ const Hero = () => {
 
                 {/* Botón CTA principal */}
                 <div className="animate-fade-in delay-200">
-                    <button
+                    <a
+                        href="https://t.me/+R2JMS0zIj51iZTMx"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="
                             group
                             relative
+                            inline-block
                             px-12
                             py-5
                             font-semibold
@@ -116,22 +111,22 @@ const Hero = () => {
                     >
                         {/* Efecto de brillo en hover */}
                         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
-                        
+
                         {/* Texto del botón */}
                         <span className="relative flex items-center gap-3">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-violet-200">
                                 Entrar a la comunidad
                             </span>
-                            <svg 
-                                className="w-5 h-5 text-purple-300 group-hover:translate-x-1 transition-transform" 
-                                fill="none" 
-                                viewBox="0 0 24 24" 
+                            <svg
+                                className="w-5 h-5 text-purple-300 group-hover:translate-x-1 transition-transform"
+                                fill="none"
+                                viewBox="0 0 24 24"
                                 stroke="currentColor"
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                             </svg>
                         </span>
-                    </button>
+                    </a>
                 </div>
 
 

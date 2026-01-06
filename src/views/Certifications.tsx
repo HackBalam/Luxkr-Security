@@ -1,5 +1,5 @@
 // C:\proyectos\prueba\pagina-curso\src\views\Certifications.tsx
-import { FaCertificate, FaChartLine, FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 
 const Certifications = () => {
   const certificationLevels = [
