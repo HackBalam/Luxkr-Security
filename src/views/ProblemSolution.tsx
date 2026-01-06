@@ -6,7 +6,7 @@ import {
 
 const ProblemSolution = () => {
   return (
-    <section className="py-20 px-4 md:px-8 bg-gradient-to-b from-[#0a0a0f] to-[#0d0a14] relative overflow-hidden">
+    <section id="servicios" className="py-20 px-4 md:px-8 bg-gradient-to-b from-[#0a0a0f] to-[#0d0a14] relative overflow-hidden">
       
       {/* Neon Top Divider */}
       <div className="absolute top-0 left-0 right-0 h-px overflow-hidden">

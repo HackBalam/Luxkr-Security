@@ -107,33 +107,7 @@ const Team = () => {
           ))}
         </div>
 
-        {/* Vision Section */}
-        <div className="bg-gradient-to-r from-[#0a0a0f] to-[#0d0716] border border-[#00eeff]/20 rounded-2xl p-8">
-          <div className="flex flex-col lg:flex-row items-center gap-8">
-            <div className="lg:w-2/3">
-              <h3 className="text-2xl font-bold mb-4 text-[#00eeff]">Nuestra Visión</h3>
-              <p className="text-lg mb-6">
-                Creemos que Latinoamérica tiene el potencial de convertirse en un hub global de talento blockchain. 
-                LUXKR+ nace para cerrar la brecha de seguridad en el ecosistema Stellar, desarrollando el talento 
-                local que necesita la industria.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-4 bg-[#00eeff]/5 rounded-lg">
-                  <h4 className="font-bold mb-2">Misión</h4>
-                  <p className="text-sm text-[#ccc]">
-                    Formar la próxima generación de auditores de seguridad blockchain para LATAM.
-                  </p>
-                </div>
-                <div className="p-4 bg-[#00ff9d]/5 rounded-lg">
-                  <h4 className="font-bold mb-2">Impacto</h4>
-                  <p className="text-sm text-[#ccc]">
-                    Proteger millones en valor y construir confianza en el ecosistema Stellar.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

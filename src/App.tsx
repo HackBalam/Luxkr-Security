@@ -25,6 +25,16 @@ function App() {
 
   const navItems = [
     {
+      label: "Inicio",
+      bgColor: "#7C3AED",
+      textColor: "#FFFFFF",
+      links: [
+        { label: "Inicio", href: "#inicio", ariaLabel: "Ir al inicio" },
+        { label: "Servicios", href: "#servicios", ariaLabel: "Nuestros servicios" },
+        { label: "Egresados", href: "#egresados", ariaLabel: "Perfil del egresado" }
+      ]
+    },
+    {
       label: "Programa",
       bgColor: "#6C2BD7", // Morado profundo
       textColor: "#FFFFFF", // Blanco
@@ -32,16 +42,6 @@ function App() {
         { label: "Overview", href: "#programa", ariaLabel: "Overview del Programa" },
         { label: "Plan de Formación", href: "#curriculum", ariaLabel: "Plan de Formación" },
         { label: "Certificaciones", href: "#certificaciones", ariaLabel: "Certificaciones" }
-      ]
-    },
-    {
-      label: "Problemática",
-      bgColor: "#FF2DAF", // Rosa fucsia
-      textColor: "#FFFFFF", // Blanco
-      links: [
-        { label: "Problema", href: "#problema", ariaLabel: "Problema" },
-        { label: "Solución", href: "#solucion", ariaLabel: "Solución" },
-        { label: "Impacto", href: "#impacto", ariaLabel: "Impacto" }
       ]
     },
     {

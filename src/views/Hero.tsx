@@ -2,7 +2,7 @@ import compuHero from "../assets/compu-hero.jpg";
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <section id="inicio" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
             {/* Fondo con la imagen de la MacBook */}
             <div className="absolute inset-0">
                 {/* Gradiente superior para el título */}
