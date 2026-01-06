@@ -14,22 +14,7 @@ const Footer = () => {
 
       <div className="relative z-10 pt-20 pb-12 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
-          {/* CTA Section */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8">
-              <span className="bg-gradient-to-r from-[#00ff9d] via-[#00eeff] to-[#ff00ff] bg-clip-text text-transparent">
-                ¿Quieres tener una asesoría gratis de ciberseguridad?
-              </span>
-            </h2>
-            <p className="text-xl text-[#ccc] max-w-3xl mx-auto mb-12">
-              Llena el formulario con los datos correspondientes, agenda una sesión y nos pondremos en contacto contigo.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAaZURcneOSbE4eUK7_pYW8nVtFsxFshIfRn0VjMyRHfh2-w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-gradient-to-r from-[#00ff9d] to-[#00eeff] rounded-xl hover:shadow-glowStrong transition-all duration-300">
-                <span className="font-bold text-white" style={{ color: '#ffffff' }}>FORMULARIO</span>
-              </a>
-            </div>
-          </div>
+          {/* CTA Section removed per request */}
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12">
             {/* Logo and Description */}

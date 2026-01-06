@@ -26,6 +26,7 @@ export interface CardNavProps {
   menuColor?: string;
   buttonBgColor?: string;
   buttonTextColor?: string;
+  buttonText?: string;
 }
 
 const CardNav: React.FC<CardNavProps> = ({
@@ -34,10 +35,11 @@ const CardNav: React.FC<CardNavProps> = ({
   items,
   className = '',
   ease = 'power3.out',
-  baseColor = '#fff',
-  menuColor,
-  buttonBgColor,
-  buttonTextColor
+  baseColor = '#181824', // Gris oscuro
+  menuColor = '#A3FF12', // Verde lima
+  buttonBgColor = '#FFD600', // Amarillo
+  buttonTextColor = '#181824', // Gris oscuro
+  buttonText = 'Empezar',
 }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -190,13 +192,13 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <a
-            href="https://t.me/+R2JMS0zIj51iZTMx"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfAaZURcneOSbE4eUK7_pYW8nVtFsxFshIfRn0VjMyRHfh2-w/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
             className="card-nav-cta-button hidden md:inline-flex border-0 rounded-[calc(0.75rem-0.2rem)] px-4 items-center h-full font-medium cursor-pointer transition-colors duration-300"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
-            Get Started
+            {buttonText}
           </a>
         </div>
 
@@ -213,7 +215,10 @@ const CardNav: React.FC<CardNavProps> = ({
               ref={setCardRef(idx)}
               style={{ backgroundColor: item.bgColor, color: item.textColor }}
             >
-              <div className="nav-card-label font-normal tracking-[-0.5px] text-[18px] md:text-[22px]">
+              <div
+                className="nav-card-label font-normal tracking-[-0.5px] text-[18px] md:text-[22px]"
+                style={{ color: item.label === 'Comunidad' ? '#ffffff' : undefined }}
+              >
                 {item.label}
               </div>
               <div className="nav-card-links mt-auto flex flex-col gap-[2px]">
@@ -223,6 +228,7 @@ const CardNav: React.FC<CardNavProps> = ({
                     className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-opacity duration-300 hover:opacity-75 text-[15px] md:text-[16px]"
                     href={lnk.href}
                     aria-label={lnk.ariaLabel}
+                    style={{ color: '#ffffff' }}
                   >
                     <GoArrowUpRight className="nav-card-link-icon shrink-0" aria-hidden="true" />
                     {lnk.label}

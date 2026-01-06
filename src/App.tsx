@@ -26,8 +26,8 @@ function App() {
   const navItems = [
     {
       label: "Programa",
-      bgColor: "#0D0716",
-      textColor: "#00ff9d",
+      bgColor: "#6C2BD7", // Morado profundo
+      textColor: "#FFFFFF", // Blanco
       links: [
         { label: "Overview", href: "#programa", ariaLabel: "Overview del Programa" },
         { label: "Plan de Formación", href: "#curriculum", ariaLabel: "Plan de Formación" },
@@ -36,8 +36,8 @@ function App() {
     },
     {
       label: "Problemática",
-      bgColor: "#170D27",
-      textColor: "#ff00ff",
+      bgColor: "#FF2DAF", // Rosa fucsia
+      textColor: "#FFFFFF", // Blanco
       links: [
         { label: "Problema", href: "#problema", ariaLabel: "Problema" },
         { label: "Solución", href: "#solucion", ariaLabel: "Solución" },
@@ -46,8 +46,8 @@ function App() {
     },
     {
       label: "Comunidad",
-      bgColor: "#271E37",
-      textColor: "#00eeff",
+      bgColor: "#00BFFF", // Azul eléctrico
+      textColor: "#181824", // Gris oscuro
       links: [
         { label: "CTF Final", href: "#ctf", ariaLabel: "CTF Final" },
         { label: "Equipo", href: "#equipo", ariaLabel: "Equipo Fundador" },
@@ -57,28 +57,27 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f] text-white overflow-x-hidden">
-      <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0a0a0f]/90 backdrop-blur-md' : ''}`}>
+    <div className="min-h-screen bg-[#181824] text-white overflow-x-hidden">
+      <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#181824]/90 backdrop-blur-md' : ''}`}>
         <CardNav 
           items={navItems} 
           logo={logo} 
-          baseColor="#0a0a0f" 
-          menuColor="#00ff9d" 
-          buttonBgColor="#fff"
-          buttonTextColor="#000"
+          baseColor="#181824" // Fondo gris oscuro
+          menuColor="#fff" // Blanco para menú hamburguesa
+          buttonBgColor="#fff" // Blanco para botón CTA
+          buttonTextColor="#000" // Negro para texto de botón
+          buttonText="Empezar"
         />
       </div>
-      
       <main>
-        <Hero />
-        <ProgramOverview />
-        <ProblemSolution />
-        <Curriculum />
-        <CTF />
-        <Certifications />
-        <Graduates />
-
-        <Team />
+          <Hero />
+          <ProblemSolution />
+          <ProgramOverview />
+          <Curriculum />
+          <Certifications />
+          <CTF />
+          <Graduates />
+          <Team />
       </main>
       
       <Footer />

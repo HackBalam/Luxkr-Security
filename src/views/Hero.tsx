@@ -67,18 +67,14 @@ const Hero = () => {
                     
                     {/* Subtítulo descriptivo */}
                     <p className="max-w-2xl text-[1.15rem] text-white/90 leading-relaxed font-light tracking-wide mx-auto animate-fade-in delay-100">
-                        Formamos y operamos auditores reales en Web2 + Web3 para 
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-300 font-medium">
-                            {" "}proteger proyectos {" "}
-                        </span>
-                        en producción.
+                        Protege tu infraestructura Web2/Web3 con auditorías expertas; agenda tu sesión y obtén asesoría gratis.
                     </p>
                 </div>
 
                 {/* Botón CTA principal */}
                 <div className="animate-fade-in delay-200">
                     <a
-                        href="https://t.me/+R2JMS0zIj51iZTMx"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfAaZURcneOSbE4eUK7_pYW8nVtFsxFshIfRn0VjMyRHfh2-w/viewform?usp=dialog"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
@@ -115,7 +111,7 @@ const Hero = () => {
                         {/* Texto del botón */}
                         <span className="relative flex items-center gap-3">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-violet-200">
-                                Entrar a la comunidad
+                                Asesoría gratuita
                             </span>
                             <svg
                                 className="w-5 h-5 text-purple-300 group-hover:translate-x-1 transition-transform"

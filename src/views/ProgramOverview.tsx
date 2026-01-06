@@ -22,7 +22,7 @@ const ProgramOverview = () => {
           
           <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             <span className="bg-gradient-to-r from-[#00ff9d] via-[#00eeff] to-[#ff00ff] bg-clip-text text-transparent">
-              PROGRAMA PROFESIONAL
+              ¿Te interesa trabajar con nosotros?
             </span>
           </h2>
           <p className="text-2xl text-[#888] max-w-3xl mx-auto font-mono">
