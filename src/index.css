@@ -8,7 +8,6 @@
   --text-primary: #e6e9f0;
   --text-secondary: #9aa4bf;
 
-  --accent-cyan: #3cf2ff;
   --accent-cyan-soft: rgba(60, 242, 255, 0.15);
 
   --border-dark: #1f2a44;
@@ -47,10 +46,7 @@ body {
   color: var(--text-secondary);
 }
 
-/* Acentos cyberpunk */
-.accent {
-  color: var(--accent-cyan);
-}
+
 
 .glow {
   text-shadow:
@@ -65,7 +61,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 8px rgba(60, 242, 255, 0.8);
+  text-shadow: 0 0 8px rgb(255, 255, 255);
 }
 
 /* Separadores */

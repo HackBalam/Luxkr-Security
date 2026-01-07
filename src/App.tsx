@@ -11,6 +11,8 @@ import Certifications from "./views/Certifications";
 import Graduates from "./views/Graduates";
 import Team from "./views/Team";
 import Footer from "./views/Footer";
+import Training from "./views/Training";
+import Cases from "./views/Cases";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,11 +74,8 @@ function App() {
       <main>
           <Hero />
           <ProblemSolution />
-          <ProgramOverview />
-          <Curriculum />
-          <Certifications />
-          <CTF />
-          <Graduates />
+          <Training />
+          <Cases />
           <Team />
       </main>
       

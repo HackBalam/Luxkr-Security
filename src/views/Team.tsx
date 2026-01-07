@@ -1,5 +1,4 @@
-// C:\proyectos\prueba\pagina-curso\src\views\Team.tsx
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaShieldAlt, FaUsers, FaChartLine, FaCode } from 'react-icons/fa';
 
 // Importar fotos del equipo
 import SergioPhoto from '../../Team/SergioAgilar.png';
@@ -14,7 +13,7 @@ const Team = () => {
       role: "Ingeniería Web3 / DeFi",
       description: "Experto en arquitecturas DeFi y smart contracts. 5+ años en desarrollo blockchain.",
       expertise: ["Smart Contracts", "DeFi Protocols", "System Architecture"],
-      color: "#00eeff",
+      color: "#9333EA",
       photo: SergioPhoto
     },
     {
@@ -22,7 +21,7 @@ const Team = () => {
       role: "Ciberseguridad & Pentesting",
       description: "Especialista en seguridad ofensiva con background en auditorías de grandes corporaciones.",
       expertise: ["Penetration Testing", "Threat Modeling", "Security Audits"],
-      color: "#00ff9d",
+      color: "#7C3AED",
       photo: DanielPhoto
     },
     {
@@ -30,7 +29,7 @@ const Team = () => {
       role: "Full-Stack, QA & Arquitectura Web",
       description: "Desarrolladora full-stack con enfoque en calidad y seguridad en aplicaciones web.",
       expertise: ["Web Security", "QA Automation", "Cloud Architecture"],
-      color: "#ff00ff",
+      color: "#9333EA",
       photo: AndreaPhoto
     },
     {
@@ -38,76 +37,81 @@ const Team = () => {
       role: "Blockchain Developer / Tech Lead",
       description: "Líder técnico especializado en Stellar/Soroban con experiencia en proyectos en producción.",
       expertise: ["Stellar/Soroban", "Rust", "Technical Leadership"],
-      color: "#ffaa00",
+      color: "#7C3AED",
       photo: JosePhoto
     }
   ];
 
   return (
-    <section id="equipo" className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#0d0716] to-[#0a0a0f] scroll-mt-24">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-[#00eeff] via-[#00ff9d] to-[#ff00ff] bg-clip-text text-transparent">
-              EQUIPO FUNDADOR
-            </span>
+    <section id="equipo" className="py-24 px-4 md:px-8 bg-[#0a0a0f] relative overflow-hidden scroll-mt-24">
+      {/* Decorative elements */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-[#9333EA]/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#7C3AED]/5 rounded-full blur-3xl" />
+
+      <div className="container mx-auto max-w-6xl relative z-10">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-5 py-2 bg-[#1a1a1a] rounded-full border border-[#9333EA]/20 mb-8">
+            <FaUsers className="text-[#9333EA]" />
+            <span className="text-white text-sm font-medium tracking-wide">NUESTRO EQUIPO</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+            Expertos en Seguridad <span className="text-[#9333EA]">Web2/Web3</span>
           </h2>
-          <p className="text-xl text-[#ccc] max-w-3xl mx-auto">
-            LUXKR+ Core Team - Combinamos décadas de experiencia en blockchain, seguridad y desarrollo para crear la firma líder en auditoría.
+          
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            Combinamos décadas de experiencia en blockchain, seguridad y desarrollo para entregar auditorías de máxima calidad.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* Team Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {teamMembers.map((member, index) => (
-            <div key={index} className="group bg-gradient-to-br from-[#0d0d14] to-[#0a0a0f] border border-white/10 rounded-2xl p-6 hover:scale-[1.02] transition-all duration-300">
-              {/* Avatar con foto */}
-              <div className="relative mb-6">
-                <div className="w-24 h-24 mx-auto rounded-full border-2 overflow-hidden" style={{ borderColor: member.color }}>
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+            <div 
+              key={index} 
+              className="group relative"
+            >
+              {/* Card */}
+              <div className="bg-[#1a1a1a] border border-white/5 rounded-2xl p-6 transition-all duration-300 hover:border-[#9333EA]/30 hover:translate-y-[-8px] h-full">
+                {/* Avatar */}
+                <div className="relative mb-6">
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white/5 group-hover:border-[#9333EA]/20 transition-colors duration-300">
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
-                <div className="absolute bottom-0 right-1/4 w-6 h-6 rounded-full bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-[#0a0a0f] flex items-center justify-center">
-                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: member.color }} />
+
+                {/* Name & Role */}
+                <div className="text-center mb-4">
+                  <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
+                  <p className="text-sm" style={{ color: member.color }}>{member.role}</p>
                 </div>
-              </div>
 
-              <h3 className="text-xl font-bold text-center mb-2">{member.name}</h3>
-              <p className="text-center text-sm mb-4" style={{ color: member.color }}>{member.role}</p>
-              
-              <p className="text-sm text-[#aaa] mb-6 text-center">
-                {member.description}
-              </p>
-
-              <div className="space-y-2">
-                <h4 className="text-xs font-bold text-[#888]">Expertise:</h4>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {member.expertise.map((skill, idx) => (
-                    <span key={idx} className="text-xs px-2 py-1 rounded-full" style={{ backgroundColor: `${member.color}20`, color: member.color }}>
-                      {skill}
-                    </span>
-                  ))}
+                {/* Description */}
+                <p className="text-gray-400 text-sm text-center mb-6 leading-relaxed">
+                  {member.description}
+                </p>
+                {/* Social Links */}
+                <div className="flex justify-center gap-4 mt-8 pt-6 border-t border-white/5">
+                  <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-[#9333EA]/20 transition-colors duration-300">
+                    <FaLinkedin className="text-gray-400 hover:text-white transition-colors duration-300" />
+                  </a>
+                  <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-[#7C3AED]/20 transition-colors duration-300">
+                    <FaGithub className="text-gray-400 hover:text-white transition-colors duration-300" />
+                  </a>
+                  <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-[#9333EA]/20 transition-colors duration-300">
+                    <FaTwitter className="text-gray-400 hover:text-white transition-colors duration-300" />
+                  </a>
                 </div>
-              </div>
-
-              <div className="flex justify-center gap-3 mt-6">
-                <a href="#" className="p-2 rounded-full hover:bg-white/10 transition-colors">
-                  <FaTwitter />
-                </a>
-                <a href="#" className="p-2 rounded-full hover:bg-white/10 transition-colors">
-                  <FaLinkedin />
-                </a>
-                <a href="#" className="p-2 rounded-full hover:bg-white/10 transition-colors">
-                  <FaGithub />
-                </a>
               </div>
             </div>
           ))}
         </div>
 
-        
       </div>
     </section>
   );
