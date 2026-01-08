@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { FaClock, FaChartLine, FaShieldAlt, FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import auditoriasImg from '../assets/auditorias.jpg';
 
@@ -89,13 +89,13 @@ const Cases = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative w-full max-w-6xl mx-auto px-4">
             {/* Línea decorativa */}
-            <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#9333EA]/30 to-transparent"></div>
+            <div className="absolute top-1/2 left-0 right-0 h-px bg-linear-to-r from-transparent via-[#9333EA]/30 to-transparent"></div>
             
             {/* Círculo decorativo central */}
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="relative">
                 <div className="w-12 h-12 rounded-full border border-[#9333EA]/30 bg-[#0a0a0f] flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#9333EA] to-[#CC00CC] opacity-70"></div>
+                  <div className="w-8 h-8 rounded-full bg-linear-to-r from-[#9333EA] to-[#CC00CC] opacity-70"></div>
                 </div>
                 
                 {/* Elementos decorativos alrededor */}
@@ -142,7 +142,7 @@ const Cases = () => {
                 >
                   {/* Step Header */}
                   <div className="flex items-start gap-6 mb-6">
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                       <div className="w-14 h-14 bg-[#9333EA]/10 rounded-xl flex items-center justify-center border border-[#9333EA]/20">
                         <span className="text-2xl font-bold text-[#9333EA]">
                           {step.number}
@@ -189,7 +189,7 @@ const Cases = () => {
                     <div className="space-y-3">
                       {step.items.map((item, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-[#9333EA] rounded-full mt-2 flex-shrink-0" />
+                          <div className="w-2 h-2 bg-[#9333EA] rounded-full mt-2 shrink-0" />
                           <span className="text-gray-300">{item}</span>
                         </div>
                       ))}
@@ -241,7 +241,7 @@ const Cases = () => {
             {/* Right Column - Image & CTA */}
             <div className="space-y-8">
               {/* Image Container */}
-              <div className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden group">
+              <div className="relative h-125 lg:h-150 rounded-2xl overflow-hidden group">
                 {/* Overlay Gradients */}
                 <div className="absolute inset-0 z-10">
                   <div 
@@ -251,7 +251,7 @@ const Cases = () => {
                       backgroundPosition: 'top left'
                     }}
                   />
-                  <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-black/50 to-transparent" />
+                  <div className="absolute top-0 left-0 right-0 h-1/3 bg-linear-to-b from-black/50 to-transparent" />
                 </div>
                 
                 {/* Background Image */}
@@ -310,7 +310,7 @@ const Cases = () => {
               </div>
 
               {/* CTA Section */}
-              <div className="bg-gradient-to-br from-[#9333EA]/10 to-[#7C3AED]/5 p-8 rounded-2xl border border-[#9333EA]/20">
+              <div className="bg-linear-to-br from-[#9333EA]/10 to-[#7C3AED]/5 p-8 rounded-2xl border border-[#9333EA]/20">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-4">
                     ¿Listo para una auditoría profesional?
@@ -367,7 +367,7 @@ const Cases = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative w-full max-w-6xl mx-auto px-4">
             {/* Línea decorativa */}
-            <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#CC00CC]/30 to-transparent"></div>
+            <div className="absolute top-1/2 left-0 right-0 h-px bg-linear-to-r from-transparent via-[#CC00CC]/30 to-transparent"></div>
             
             {/* Elementos decorativos en los extremos */}
             <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
@@ -389,8 +389,8 @@ const Cases = () => {
             {/* Círculo decorativo central */}
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#9333EA]/20 to-[#CC00CC]/20 flex items-center justify-center">
-                  <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#9333EA] to-[#CC00CC] opacity-50 animate-pulse"></div>
+                <div className="w-10 h-10 rounded-full bg-linear-to-r from-[#9333EA]/20 to-[#CC00CC]/20 flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-linear-to-r from-[#9333EA] to-[#CC00CC] opacity-50 animate-pulse"></div>
                 </div>
                 
                 {/* Anillo exterior */}

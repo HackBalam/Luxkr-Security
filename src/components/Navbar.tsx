@@ -131,7 +131,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled = false }) => {
         }
       }}
     >
-      <div className="p-2 bg-gradient-to-br from-[#9333EA]/20 to-[#CC00CC]/20 rounded-lg group-hover:scale-110 transition-transform duration-300">
+      <div className="p-2 bg-linear-to-br from-[#9333EA]/20 to-[#CC00CC]/20 rounded-lg group-hover:scale-110 transition-transform duration-300">
         {isAcademyPage ? (
           <FaShieldAlt className="text-2xl text-white" />
         ) : (
@@ -164,7 +164,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled = false }) => {
 
               <DropdownMenu.Portal>
                 <DropdownMenu.Content
-                  className="min-w-[220px] bg-[#1a1a1a] rounded-lg p-2 shadow-xl border border-white/10 z-50"
+                  className="min-w-55 bg-[#1a1a1a] rounded-lg p-2 shadow-xl border border-white/10 z-50"
                   sideOffset={5}
                 >
                   {item.subItems.map((subItem) => (
@@ -195,7 +195,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled = false }) => {
 
       <button
         onClick={() => window.open('https://t.me/+R2JMS0zIj51iZTMx', '_blank')}
-        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#9333EA] to-[#CC00CC] text-white text-sm font-medium rounded-lg hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 hover:scale-105"
+        className="flex items-center gap-2 px-4 py-2 bg-linear-to-r from-[#9333EA] to-[#CC00CC] text-white text-sm font-medium rounded-lg hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 hover:scale-105"
       >
         <FaTelegram className="text-base" />
         <span>{isAcademyPage ? 'Ingresar' : 'Unirse'}</span>
@@ -260,7 +260,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled = false }) => {
 
               <button
                 onClick={() => window.open('https://t.me/+R2JMS0zIj51iZTMx', '_blank')}
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-[#9333EA] to-[#CC00CC] text-white font-medium rounded-lg hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 mt-4"
+                className="flex items-center justify-center gap-2 px-4 py-3 bg-linear-to-r from-[#9333EA] to-[#CC00CC] text-white font-medium rounded-lg hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 mt-4"
               >
                 <FaTelegram className="text-base" />
                 <span>{isAcademyPage ? 'Ingresar al Telegram' : 'Unirse al Telegram'}</span>

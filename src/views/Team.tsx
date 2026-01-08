@@ -1,4 +1,4 @@
-import { FaTwitter, FaLinkedin, FaGithub, FaShieldAlt, FaUsers, FaChartLine, FaCode } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaUsers } from 'react-icons/fa';
 
 // Importar fotos del equipo
 import SergioPhoto from '../../Team/SergioAgilar.png';
@@ -73,7 +73,7 @@ const Team = () => {
               className="group relative"
             >
               {/* Card */}
-              <div className="bg-[#1a1a1a] border border-white/5 rounded-2xl p-6 transition-all duration-300 hover:border-[#9333EA]/30 hover:translate-y-[-8px] h-full">
+              <div className="bg-[#1a1a1a] border border-white/5 rounded-2xl p-6 transition-all duration-300 hover:border-[#9333EA]/30 hover:-translate-y-2 h-full">
                 {/* Avatar */}
                 <div className="relative mb-6">
                   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white/5 group-hover:border-[#9333EA]/20 transition-colors duration-300">

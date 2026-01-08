@@ -1,4 +1,4 @@
-import { FaShieldAlt, FaCode, FaServer, FaSearch, FaFileAlt, FaDollarSign, FaClock, FaGlobeAmericas, FaComments } from 'react-icons/fa';
+import { FaShieldAlt, FaCode, FaServer, FaSearch, FaFileAlt } from 'react-icons/fa';
 import chicoProgramador from '../assets/chico-programador.png';
 
 const ProblemSolution = () => {
@@ -28,9 +28,9 @@ const ProblemSolution = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           
           {/* Columna Izquierda - Imagen */}
-          <div className="relative h-[450px] lg:h-[550px] rounded-xl overflow-hidden">
+          <div className="relative h-112.5 lg:h-137.5 rounded-xl overflow-hidden">
             {/* Overlay oscuro azul/violeta */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1a0b2e]/45 via-[#0f172a]/45 to-[#1e1b4b]/45 z-10" />
+            <div className="absolute inset-0 bg-linear-to-r from-[#1a0b2e]/45 via-[#0f172a]/45 to-[#1e1b4b]/45 z-10" />
             
             {/* Imagen de fondo */}
             <div 

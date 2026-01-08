@@ -6,9 +6,9 @@ const Footer = () => {
     <footer id="contacto" className="relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#9333EA] to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-[#9333EA] to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#0a0a0f] via-transparent to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-black/50 to-transparent" />
       </div>
 
       <div className="relative z-10 pt-20 pb-12 px-4 md:px-8">
@@ -17,7 +17,7 @@ const Footer = () => {
             {/* Logo and Description */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-gradient-to-br from-[#9333EA]/20 to-[#CC00CC]/20 rounded-lg">
+                <div className="p-2 bg-linear-to-br from-[#9333EA]/20 to-[#CC00CC]/20 rounded-lg">
                   <SiStellar className="text-3xl text-white" />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-8" />
+          <div className="h-px bg-linear-to-r from-transparent via-white/20 to-transparent my-8" />
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">

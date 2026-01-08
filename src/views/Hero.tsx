@@ -48,10 +48,10 @@ const Hero = () => {
       {/* Fondo con la imagen de la MacBook */}
       <div className="absolute inset-0">
         {/* Gradiente superior para el título */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent z-0" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/40 to-transparent z-0" />
         
         {/* Gradiente inferior para el botón CTA */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-0" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent z-0" />
         
         {/* Imagen de la MacBook con efectos de difuminado */}
         <div 
@@ -67,7 +67,7 @@ const Hero = () => {
         />
         
         {/* Efectos de luces violetas adicionales */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-transparent to-violet-800/5 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-linear-to-br from-purple-900/10 via-transparent to-violet-800/5 mix-blend-overlay" />
         
         {/* Partículas sutiles para profundidad */}
         <div className="absolute inset-0 overflow-hidden">
@@ -133,7 +133,7 @@ const Hero = () => {
               text-base
               md:text-lg
               text-white
-              bg-gradient-to-r from-purple-600 to-violet-600
+              bg-linear-to-r from-purple-700 to-violet-700
               backdrop-blur-sm
               border
               border-purple-500/30
@@ -143,18 +143,18 @@ const Hero = () => {
               hover:scale-105
               hover:shadow-[0_0_40px_rgba(147,51,234,0.6)]
               hover:border-purple-400
-              hover:bg-gradient-to-r from-purple-700 to-violet-700
+              hover:bg-linear-to-r
               active:scale-95
               focus:outline-none
               focus:ring-2
               focus:ring-purple-500/50
               overflow-hidden
-              min-w-[220px]
+              min-w-55
               text-center
             "
           >
             {/* Efecto de brillo en hover */}
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
+            <span className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
 
             {/* Texto del botón */}
             <span className="relative flex items-center justify-center gap-3">
@@ -184,7 +184,7 @@ const Hero = () => {
               text-base
               md:text-lg
               text-white
-              bg-gradient-to-r from-gray-800/60 to-gray-900/60
+              bg-linear-to-r from-gray-800/60 to-gray-900/60
               backdrop-blur-sm
               border
               border-white/20
@@ -194,19 +194,19 @@ const Hero = () => {
               hover:scale-105
               hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]
               hover:border-white/40
-              hover:bg-gradient-to-r from-gray-800/80 to-gray-900/80
+              hover:bg-linear-to-r
               active:scale-95
               focus:outline-none
               focus:ring-2
               focus:ring-white/30
               overflow-hidden
-              min-w-[220px]
+              min-w-55
               text-center
               cursor-pointer
             "
           >
             {/* Efecto de brillo en hover (opcional, para consistencia) */}
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
+            <span className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
             
             {/* Texto del botón */}
             <span className="relative flex items-center justify-center gap-3">

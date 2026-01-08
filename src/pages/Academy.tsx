@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Terminal, Code, Bug, Lock, FileCode, ChevronRight, Users, Award, Zap, BookOpen, Clock, Target, CheckCircle } from 'lucide-react';
+import { Shield, Terminal, Code, Bug, Lock, FileCode, ChevronRight, Zap, BookOpen, Target} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface Module {
@@ -9,11 +9,6 @@ interface Module {
   topics: string[];
 }
 
-interface Stat {
-  icon: React.ElementType;
-  value: string;
-  label: string;
-}
 
 const Academy = () => {
   const navigate = useNavigate();
@@ -103,13 +98,6 @@ const Academy = () => {
     }
   };
 
-  const handleStatsClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const element = document.getElementById('stats');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   // Handler para ir a home
   const handleGoHome = (e: React.MouseEvent) => {
@@ -118,7 +106,7 @@ const Academy = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white font-sans">
+    <div className="min-h-screen bg-linear-to-b from-gray-900 to-black text-white font-sans">
       {/* REMOVÍ EL HEADER DUPLICADO - El navbar global ya está manejando esto */}
       
       {/* Hero Section */}
@@ -132,8 +120,8 @@ const Academy = () => {
         <div className="container mx-auto px-4 sm:px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full mb-8">
-              <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full mb-8">
+              <span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full animate-pulse"></span>
               <span className="text-sm font-medium text-purple-300">
                 Inscripciones abiertas 2026
               </span>
@@ -141,12 +129,12 @@ const Academy = () => {
             
             {/* Main Title */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Formación <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400">Élite</span> en{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              Formación <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-purple-400">Élite</span> en{' '}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">
                 Ciberseguridad
               </span>{' '}
               y{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-purple-400">
                 Web3
               </span>
             </h1>
@@ -161,7 +149,7 @@ const Academy = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleApplyClick}
-                className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                className="group px-8 py-4 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
               >
                 <span>Quiero más información</span>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -187,7 +175,7 @@ const Academy = () => {
                 key={index}
                 className="group bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-linear-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <feature.icon className="w-6 h-6 text-purple-400" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
@@ -210,7 +198,7 @@ const Academy = () => {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-4">
               Ruta de{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">
                 Aprendizaje
               </span>
             </h2>
@@ -227,7 +215,7 @@ const Academy = () => {
                 className="group relative bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1"
               >
                 {/* Gradient Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-linear-to-br from-purple-500/5 to-pink-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                 
                 <div className="relative">
                   {/* Header */}
@@ -235,7 +223,7 @@ const Academy = () => {
                     <span className="text-xs font-semibold text-purple-400 uppercase tracking-wider">
                       {module.month}
                     </span>
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/20 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-linear-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/20 flex items-center justify-center">
                       <module.icon className="w-5 h-5 text-purple-400" />
                     </div>
                   </div>
@@ -252,7 +240,7 @@ const Academy = () => {
                         key={topicIndex}
                         className="flex items-center gap-3 text-gray-300"
                       >
-                        <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-pink-400" />
+                        <div className="w-2 h-2 rounded-full bg-linear-to-r from-purple-400 to-pink-400" />
                         <span className="text-sm">{topic}</span>
                       </li>
                     ))}
@@ -267,13 +255,13 @@ const Academy = () => {
       {/* Final CTA Section */}
       <section className="py-20 relative overflow-hidden">
         {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/5 to-purple-500/10" />
+        <div className="absolute inset-0 bg-linear-to-r from-purple-500/10 via-pink-500/5 to-purple-500/10" />
         
         <div className="container mx-auto px-4 sm:px-6 relative">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               ¿Listo para dominar la{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">
                 ciberseguridad
               </span>
               ?
@@ -287,7 +275,7 @@ const Academy = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={handleTelegramClick}
-                className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                className="group px-8 py-4 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
               >
                 <span>Unirse al grupo de Telegram</span>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -313,12 +301,12 @@ const Academy = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg">
+              <div className="p-2 bg-linear-to-r from-purple-600 to-pink-600 rounded-lg">
                 <Shield className="w-5 h-5" />
               </div>
               <div>
                 <span className="font-bold text-lg">
-                  LUXKR+ <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">CYBERACADEMY</span>
+                  LUXKR+ <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">CYBERACADEMY</span>
                 </span>
                 <p className="text-xs text-gray-500 mt-1">Formación Élite en Ciberseguridad</p>
               </div>

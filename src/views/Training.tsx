@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaUsers, FaClock, FaCalendarAlt, FaLaptopCode, FaFileAlt, FaArrowRight } from 'react-icons/fa';
 import capacitacionesImg from '../assets/capacitaciones.png';
 import { useNavigate } from 'react-router-dom'; // Agrega este import
@@ -32,7 +31,7 @@ const Training = () => {
       {/* Contenedor Principal con Imagen de Fondo */}
       <div className="relative">
         {/* Imagen y overlay */}
-        <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden rounded-2xl">
+        <div className="relative w-full h-125 md:h-150 overflow-hidden rounded-2xl">
           
           {/* Imagen alineada IZQUIERDA CENTRO */}
           <div 
@@ -152,7 +151,7 @@ const Training = () => {
         <div className="flex justify-center mt-8">
           <button 
             onClick={handleAcademyClick} // Agrega el onClick
-            className="group relative px-8 py-4 bg-gradient-to-r from-[#9333EA] to-[#CC00CC] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 hover:scale-105 mx-auto cursor-pointer"
+            className="group relative px-8 py-4 bg-linear-to-r from-[#9333EA] to-[#CC00CC] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 hover:scale-105 mx-auto cursor-pointer"
           >
             <div className="flex items-center justify-center gap-3">
               <span>Unirse a la Academia</span>
