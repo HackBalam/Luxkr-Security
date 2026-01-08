@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaUsers, FaClock, FaCalendarAlt, FaLaptopCode, FaFileAlt, FaArrowRight } from 'react-icons/fa';
 import capacitacionesImg from '../assets/capacitaciones.png';
+import { useNavigate } from 'react-router-dom'; // Agrega este import
 
 const Training = () => {
+  const navigate = useNavigate(); // Crea el hook
+
+  const handleAcademyClick = () => {
+    navigate('/academia'); // Navega a la página de academia
+  };
+
   return (
     <section id="capacitaciones" className="py-20 px-4 md:px-8 bg-[#0a0a0f] relative overflow-hidden">
       
@@ -141,9 +148,12 @@ const Training = () => {
           </div>
         </div>
 
-        {/* Botón CTA centrado */}
+        {/* Botón CTA centrado - AHORA CON NAVEGACIÓN */}
         <div className="flex justify-center mt-8">
-          <button className="group relative px-8 py-4 bg-gradient-to-r from-[#9333EA] to-[#CC00CC] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 hover:scale-105 mx-auto">
+          <button 
+            onClick={handleAcademyClick} // Agrega el onClick
+            className="group relative px-8 py-4 bg-gradient-to-r from-[#9333EA] to-[#CC00CC] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#9333EA]/30 transition-all duration-300 hover:scale-105 mx-auto cursor-pointer"
+          >
             <div className="flex items-center justify-center gap-3">
               <span>Unirse a la Academia</span>
               <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
